@@ -1,0 +1,72 @@
+body {
+    background-color: #007BFF; /* Azul */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    text-align: center;
+    overflow: hidden; /* Impede o scroll */
+    padding: 20px; /* Adiciona espaçamento */
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%; /* Ajusta para 100% */
+    max-width: 400px; /* Limita a largura máxima */
+    overflow: hidden;
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaço entre o slideshow e o texto */
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 500px; /* Limita a altura máxima da imagem */
+    object-fit: contain; /* Ajusta a imagem sem cortá-la */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+h1 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin: 10px 0; /* Margem para o título */
+}
+
+h2 {
+    font-size: 1.2em; /* Aumenta o tamanho do texto */
+    padding: 0 10px; /* Adiciona um pouco de espaçamento */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+}
+
+.heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('heart.png') no-repeat center;
+    background-size: cover;
+    opacity: 0.8;
+    pointer-events: none; /* Impede interações */
+}
+
+/* Estilo do botão */
+.play-button {
+    background-color: #ffffff; /* Cor do botão */
+    color: #007BFF; /* Cor do texto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.play-button:hover {
+    background-color: #f0f0f0; /* Efeito hover */
+}
